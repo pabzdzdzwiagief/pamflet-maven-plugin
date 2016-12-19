@@ -11,7 +11,7 @@ import pamflet.Pamflet;
 
 @Mojo(name = "preview")
 public final class PamfletPreviewMojo extends AbstractMojo {
-    @Parameter(defaultValue = "src/site")
+    @Parameter(required = true, defaultValue = "src/site")
     private File sourceDirectory;
 
     public void execute() throws MojoExecutionException {
